@@ -39,11 +39,11 @@ jobs:
         run: pnpm run juejin userId=${{ secrets.userId }}
 
         # 推送信息到微信
-      - name: 推送信息到微信
-        uses: easychen/github-action-server-chan@main
-        with:
-          sendkey: ${{ secrets.PRIVATE_FANGTANG_KEY }}
-          title: '掘金自动签到完成'
+      # - name: 推送信息到微信
+      #   uses: easychen/github-action-server-chan@main
+      #   with:
+      #     sendkey: ${{ secrets.PRIVATE_FANGTANG_KEY }}
+      #     title: '掘金自动签到完成'
 
       - name: Display Git status
         run: git status
