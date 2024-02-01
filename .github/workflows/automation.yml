@@ -7,6 +7,9 @@ on:
   # schedule 的 cron 任务可能会延迟，短则几小时长则甚至可能一天 配置了 workflow_dispatch 我们就可以手动执行了
   workflow_dispatch:
 
+permissions:
+  contents: write  
+
 # 推送之后执行一系列的任务
 jobs:
   build:
