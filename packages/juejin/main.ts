@@ -92,7 +92,7 @@ async function start() {
 
 await start()
 
-await page.click('.signin .btn')
+// await page.click('.signin .btn')
 
 try {
 	// await page.waitForSelector('.header-text', { timeout: 2000 })
