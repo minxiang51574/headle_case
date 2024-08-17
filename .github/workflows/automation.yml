@@ -18,8 +18,8 @@ jobs:
      # 配置了用户名和邮箱
       - name: 配置用户名和邮箱
         run: |
-          git config --local user.email "546143220@qq.com"
-          git config --local user.name "minxiang51574"
+          git config --global user.email "546143220@qq.com"
+          git config --global user.name "minxiang51574"
 
       # 获取代码
       - name: 迁出代码
