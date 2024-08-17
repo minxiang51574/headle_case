@@ -78,7 +78,7 @@ async function start() {
 			() => {
 				const elements = document.querySelector('.login-user-name')
 				return !elements
-			},
+			}, 
 			{ timeout: 1000 }
 		)
 	} catch (error) {
@@ -95,7 +95,7 @@ await start()
 await page.click('.signin .btn')
 
 try {
-	await page.waitForSelector('.header-text', { timeout: 2000 })
+	// await page.waitForSelector('.header-text', { timeout: 2000 })
 	console.log('🎉 签到成功')
 	const cookies = await page.cookies()
 	let res
